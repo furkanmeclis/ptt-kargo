@@ -1,0 +1,67 @@
+{
+    "name": "furkanmeclis/ptt-kargo",
+    "description": "Laravel package for PTT Cargo SOAP API integration",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "ptt",
+        "ptt-kargo",
+        "laravel",
+        "soap",
+        "ptt-soap"
+    ],
+    "authors": [
+        {
+            "name": "Furkan Meclis",
+            "email": "furkanmeclis@icloud.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/log": "^11.0|^12.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "FurkanMeclis\\PttKargo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FurkanMeclis\\PttKargo\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FurkanMeclis\\PttKargo\\PttKargoServiceProvider"
+            ],
+            "aliases": {
+                "PttKargo": "FurkanMeclis\\PttKargo\\Facades\\PttKargo"
+            }
+        }
+    },
+    "scripts": {
+        "generate": "php generate-classes.php",
+        "test": "pest",
+        "test-coverage": "pest --coverage",
+        "analyse": "phpstan analyse",
+        "format": "pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
