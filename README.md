@@ -1,5 +1,9 @@
 # PTT Kargo Laravel Package
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/furkanmeclis/ptt-kargo.svg?style=flat-square)](https://packagist.org/packages/furkanmeclis/ptt-kargo)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/furkanmeclis/ptt-kargo/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/furkanmeclis/ptt-kargo/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/furkanmeclis/ptt-kargo.svg?style=flat-square)](https://packagist.org/packages/furkanmeclis/ptt-kargo)
+
 Laravel package for PTT Cargo SOAP API integration with auto-generated classes from WSDL, retry mechanism, and logging.
 
 ## Installation
